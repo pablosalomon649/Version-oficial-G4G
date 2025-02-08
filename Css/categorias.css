@@ -1,0 +1,52 @@
+/* Asegura que las imágenes de categorías tengan el mismo tamaño */
+.categories .category img {
+    width: 220px; /* Ajusta a tu preferencia */
+    height: 220px; /* Ajusta a tu preferencia */
+    object-fit: scale-down; /* Asegura que las imágenes cubran el área sin deformarse */
+    border-radius: 10px; /* Esquinas más redondeadas para un estilo más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+/* Estilo de hover para las imágenes */
+.categories .category img:hover {
+    transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar la imagen al hacer hover */
+}
+
+/* Centra las imágenes dentro de su contenedor */
+.categories .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Espaciado entre categorías */
+    overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.categories .category img {
+    max-width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+    max-height: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+}
+
+/* Estilos del carrusel */
+.carousel-inner img {
+    width: 100%; /* Ajusta a la totalidad del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin deformarse */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo de la leyenda del carrusel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Fondo más oscuro para mayor contraste */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em; /* Aumenta un poco el tamaño de la fuente */
+    color: #fff; /* Texto blanco para mayor visibilidad */
+}
+
+/* Mejora de la transición de las imágenes del carrusel */
+.carousel-inner {
+    transition: transform 0.5s ease-in-out; /* Transición suave para los cambios de imagen */
+}

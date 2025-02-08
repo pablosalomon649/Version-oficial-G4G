@@ -1,0 +1,243 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #FFA500;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #333;
+    }
+
+.logo span {
+    color: white;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Barra de navegación de escritorio */
+.nav-links-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #FFA500;
+}
+
+.nav-links-desktop a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-links-desktop a:hover {
+    text-decoration: underline;
+}
+/* Barra de navegación móvil */
+.nav-links-mobile {
+    display: none;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.orders {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+}
+
+.order-card {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-details p {
+    margin: 5px 0;
+}
+
+.order-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn-processing {
+    background-color: #ddd;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btn-processing:hover {
+    background-color: #d7d7d7;
+}
+
+.btn-completed {
+    background-color: #ffd966;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-completed:hover {
+    background-color: #ffcc33;
+}
+
+.btn-add {
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn-add:hover {
+    background-color: #2eb82e;
+}
+
+.pipe {
+    width: 50px;
+    height: 100px;
+    background-color: #32cd32;
+    margin: 0 auto;
+    border: 5px solid #228b22;
+    border-radius: 5px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    margin-right: 5px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 780px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .nav-links-desktop {
+        display: none; /* Oculta la barra de escritorio */
+    }
+
+    #imagenesxd {
+        display: none; /* Oculta la barra de escritorio */
+    }
+    .nav-links-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFA500;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links-mobile .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .nav-links-mobile .nav-item i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .nav-links-mobile .nav-item:hover {
+        color: #fff5e6;
+    }
+}

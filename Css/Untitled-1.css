@@ -1,0 +1,160 @@
+      /* Variables de colores y estilos */
+        :root {
+            --color-fondo-principal: #333;
+            --color-fondo-blanco: #fff;
+            --color-acento: #ffa500;
+            --color-acento-hover: #ff8c00;
+            --color-texto: #333;
+            --color-blanco: #fff;
+            --color-link: #007bff;
+            --color-fondo-bienvenida: #ffa500;
+            --color-tuberia: #32CD32;
+            --color-tuberia-borde: #228B22;
+            --color-base: #8B4513;
+
+            --radio-borde: 20px;
+            --tamano-texto-titulo: 28px;
+            --tamano-texto-subtitulo: 40px;
+            --tamano-texto-bienvenida: 32px;
+            --ancho-contenedor: 100%;
+            --alto-contenedor: 100%;
+        }
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-fondo-principal);
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Contenedor de pantalla completa */
+        .container {
+            width: var(--ancho-contenedor);
+            height: var(--alto-contenedor);
+            display: flex;
+        }
+
+        /* Sección Izquierda (Login) */
+        .login-section {
+            width: 50%;
+            background-color: var(--color-fondo-blanco);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-section h2 {
+            margin-bottom: 20px;
+            font-size: var(--tamano-texto-titulo);
+            font-weight: bold;
+        }
+
+        .login-section label {
+            width: 100%;
+            font-size: 14px;
+            margin: 10px 0 5px;
+            color: var(--color-texto);
+        }
+
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: var(--radio-borde);
+            border: 1px solid #ddd;
+            background-color: #eee;
+            margin-bottom: 15px;
+        }
+
+        .login-section button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: var(--radio-borde);
+            color: var(--color-blanco);
+            background-color: var(--color-acento);
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-section button:hover {
+            background-color: var(--color-acento-hover);
+        }
+
+        .login-section a {
+            font-size: 14px;
+            color: var(--color-link);
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        /* Sección Derecha (Bienvenida) */
+        .welcome-section {
+            width: 50%;
+            background-color: var(--color-fondo-bienvenida);
+            color: var(--color-blanco);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .welcome-section h1 {
+            font-size: var(--tamano-texto-subtitulo);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .welcome-section h2 {
+            font-size: var(--tamano-texto-bienvenida);
+            margin-bottom: 40px;
+        }
+
+        .pipe-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Asegura que ocupe el ancho del contenedor */
+            padding-top: 20px;
+        }
+        
+        .pipe-icon img {
+            width: 100px; /* Ajusta el tamaño según necesites */
+            height: auto;
+            max-width: 100%; /* Escala la imagen de forma proporcional */
+            object-fit: contain;
+        }
+
+
+        .welcome-section .register-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: var(--radio-borde);
+            border: none;
+            background-color: var(--color-blanco);
+            color: var(--color-texto);
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section .register-button:hover {
+            background-color: #ddd;
+        }
+
+     

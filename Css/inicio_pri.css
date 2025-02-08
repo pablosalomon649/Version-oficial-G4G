@@ -1,0 +1,248 @@
+/* Reset some basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ebe9f0;
+}
+
+/* Header styling */
+header {
+  background-color: #5955DD;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo span {
+  color: white;
+}
+
+.search-bar {
+  width: 400px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Barra de navegación de escritorio */
+.nav-links-desktop {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: #5955DD;
+}
+
+.nav-links-desktop a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav-links-desktop a:hover {
+  text-decoration: underline;
+}
+/* Barra de navegación móvil */
+.nav-links-mobile {
+  display: none;
+}
+/* Products section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.product {
+  min-width: 200px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  max-width: 200px; /* Restringe el ancho máximo */
+  margin: 0 auto; /* Centra cada producto */
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.product img {
+  width: 100%;
+  height: 200px; /* Define una altura uniforme para todas las imágenes */
+  object-fit: contain; /* Ajusta la imagen para que se recorte sin deformarse */
+  border-radius: 8px;
+}
+
+.product p {
+  font-size: 14px; /* Tamaño de fuente legible */
+  margin: 10px 0;
+  color: #333;
+  white-space: nowrap; /* Evita que el texto pase a otra línea */
+  overflow: hidden; /* Oculta el texto que se salga del contenedor */
+  text-overflow: ellipsis; /* Añade "..." al final del texto largo */
+  max-width: 180px; /* Ajusta el ancho máximo para mantener la uniformidad */
+}
+.price {
+  color: #e60000;
+  font-weight: bold;
+}
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 780px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .nav-links-desktop {
+    display: none; /* Oculta la barra de escritorio */
+  }
+
+  #imagenesxd {
+    display: none; /* Oculta la barra de escritorio */
+  }
+  .nav-links-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffa500;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links-mobile .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .nav-links-mobile .nav-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .nav-links-mobile .nav-item:hover {
+    color: #fff5e6;
+  }
+
+  /* Modificar el grid para pantallas pequeñas */
+  .products {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Dos columnas en lugar de múltiples columnas automáticas */
+    padding: 10px;
+  }
+
+  .product {
+    min-width: 160px;
+    max-width: 160px; /* Elimina la restricción de ancho máximo */
+  }
+
+  .product img {
+    width: 100%; /* Ajusta la altura para pantallas pequeñas */
+  }
+
+  .product p {
+    max-width: 160px; /* Ajusta el ancho máximo del texto */
+    font-size: 12px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+  }
+
+  .banner p{
+    font-size: 15px;
+  }
+}
+/* Banner styling */
+.banner {
+  background-color: #ebe9f0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 34px;
+  margin-top: 5px;
+}
+
+/* Categories section */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.category {
+  font-size: 26px;
+  text-align: center;
+}
+
+.category img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}

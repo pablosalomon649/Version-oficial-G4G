@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #FFA500;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #333;
+    }
+
+    .logo span {
+    color: white;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Barra de navegación de escritorio */
+.nav-links-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #FFA500;
+}
+
+.nav-links-desktop a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-links-desktop a:hover {
+    text-decoration: underline;
+}
+/* Barra de navegación móvil */
+.nav-links-mobile {
+    display: none;
+}
+
+h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-warning {
+    background-color: #fcbf49;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e5a840;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    margin-right: 5px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 780px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .nav-links-desktop {
+        display: none; /* Oculta la barra de escritorio */
+    }
+
+    #imagenesxd {
+        display: none; /* Oculta la barra de escritorio */
+    }
+    .nav-links-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFA500;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links-mobile .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .nav-links-mobile .nav-item i {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .nav-links-mobile .nav-item:hover {
+        color: #fff5e6;
+    }
+}
